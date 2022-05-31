@@ -1,0 +1,27 @@
+ - name: Sending Dingtalk Message
+      uses: x-actions/dingtalk@release/v1
+      env:
+        DINGTALK_ACCESS_TOKEN: ${{ secrets.DINGTALK_ACCESS_TOKEN }}
+        DINGTALK_SECRET: ${{ secrets.DINGTALK_SECRET }}
+        MSGTYPE: markdown
+        TEXT: |
+          # Noti
+          > Build Github Action Done.
+          > ^_^
+Usage of ./dingtalk:
+  -accessToken string
+    	robot webhook access token
+  -isAtAll
+    	is at all
+  -messageUrl string
+    	Message Url
+  -msgtype string
+    	message type (text) (default "text")
+  -picUrl string
+    	Message Picture Url
+  -secret string
+    	robot webhook secret
+  -text string
+    	text of message (default "我是长毛智能机器人")
+  -title string
+    	title of message (default "暂时还不能对话")
