@@ -20,7 +20,7 @@ class DingTalkNotifier(object):
         self.repo_language = repo.get('language')
         self.repo_star_count = repo.get('stargazers_count')
         self._md_repo = f'[{self.repo_full_name}]({self.repo_page})'
-        self.bot = DingtalkChatbot(conf.webhook, conf.secret)
+        self.bot = DingtalkChatbot(conf.https://oapi.dingtalk.com/robot/send?access_token=2a1c61787bc9870a87500644ab0256ed7845a8e9d92dcaa1f73ce9875e5d9c90, conf.secret)
 
     def notify(self):
         logging.info(f'Preparing notification: {self.payload}')
